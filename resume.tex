@@ -1,0 +1,197 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1:}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSimpleItem}[1]{
+    \item\small{
+        {#1}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSimpleSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeListTitle}[1]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://girishk.net/}{\Large Girish Kumar}} & Email : \href{mailto:girishk15@outlook.com}{girishk15@outlook.com}\\
+  \href{https://girishk.net}{https://girishk.net} & Mobile : +91-9815215512 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Ropar}{Punjab, India}
+      {Bachelor of Engineering in Computer Science;  CGPA: 7.06}{Aug. 2016 -- Present}
+    \resumeSubheading
+      {Rajasthan Board of Secondary Education}{Kota, Rajasthan}
+      {Maths \& Science;  85.8\%}{2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Internship}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zomato}{Gurgaon, India}
+      {SRE Intern}{May -- July 2019}
+      \resumeItemListStart
+        \resumeSimpleItem
+        {Maintained and improved SMS Service, designed template based system and added stats using prometheus}
+        \resumeSimpleItem
+        {Revamped the entire codebase for easier extension and scaling of the service}
+        \resumeSimpleItem
+        {Designed a dashboard for admin uses using React, PhP and GO}
+        \resumeSimpleItem
+        {Learned software engineering patterns and some cool tech stuff}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSimpleSubheading
+    {COMPETITIVE PROGRAMMING PALTFORM}{Django, Docker, Redis, Postgres}
+    \resumeItemListStart
+      \resumeSimpleItem {CodeArea is a competitive programming platform}
+      \resumeSimpleItem {Designed code editor and judge for submission using python and Docker}
+      \resumeSimpleItem {Added priority queue using Celery and Redis}
+    \resumeItemListEnd
+    \resumeSimpleSubheading
+    {LOCAL AND ONLINE PRICE COMPARISON}{Django, Postgres}
+    \resumeItemListStart
+        \resumeSimpleItem {Created a web app on which sellers can post there products, maintain multiple shops}
+        \resumeSimpleItem {Users can compare a perticular product's price from different sellers and online store e.g. Amazon}
+    \resumeItemListEnd
+    \resumeSimpleSubheading
+    {MULTIPROCESSOR SIMULATOR}{C++}
+    \resumeItemListStart
+      \resumeSimpleItem {Created a multiprocessor simulator for a 16-bit simple RISC isa in C++ by executing operations in circular fashion}
+      \resumeSimpleItem {Added instruction to simple-RISC for parallelsim, eg. WFE(wait for event), SEV(send event)}
+    \resumeItemListEnd
+    \resumeSimpleSubheading
+    {FLAPPY BIRD AI} {Neural Network, SVM, pygame}
+    \resumeItemListStart
+      \resumeSimpleItem {Created flappy bird game using pygame}
+      \resumeSimpleItem {Trained gaussian and linear svm for flappy bird game}
+      \resumeSimpleItem {Implemented neural network with genetic algorithm for flappy bird}
+    \resumeItemListEnd
+    \resumeSimpleSubheading
+    {FPS - AI} {Deep Reinforcement Learning}
+    \resumeItemListStart
+      \resumeSimpleItem {Designed and Trained, deep neural network with A2C algorithm for various scenarios of vizdoom enviorment}
+      \resumeSimpleItem {Compared different apporaches and alogorithms for different scenarios}
+      \resumeSimpleItem {Learned deep reinforcement learning}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+% --------PROGRAMMING SKILLS------------
+\section{About Me}
+ \resumeSubHeadingListStart
+    \resumeListTitle{Tech Skills}
+        \resumeItemListStart
+            \resumeItem{Programming}
+            {GO, Python, C/C++, React}
+            \resumeItem{Other}
+            {Redis, Docker, Sql, git, Linux, VIM}
+        \resumeItemListEnd
+    \resumeListTitle{Awards \& Honors}
+        \resumeItemListStart
+            \resumeSimpleItem{Won hackathon at Advitiya IIT Ropar Tech Fest}
+            \resumeSimpleItem{Got selected for KVPY scholarship}
+        \resumeItemListEnd
+ \resumeSubHeadingListEnd
+ 
+% -------------- MOOCs -----------------
+\section{MOOCs}
+    \resumeItemListStart
+        \resumeItem {Coursera}
+        {Algorithmic Toolbox}
+        \resumeItem {Coursera}
+        {Neural Networks and Deep Learning, Improving Deep Neural Networks}
+    \resumeItemListEnd
+
+
+
+% -------------------------------------------
+\end{document}
